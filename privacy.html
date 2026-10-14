@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="個人用バックアップアプリ rclone-backup のデータ利用、保管、削除、アクセス取消について。">
+  <title>プライバシーポリシー — rclone-backup</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#243245;background:#f6f8fb;line-height:1.8}*{box-sizing:border-box}body{margin:0}main{max-width:760px;margin:auto;padding:48px 24px 64px}header{border-bottom:1px solid #cdd7e4;padding-bottom:24px;margin-bottom:32px}.label{color:#47627f;font-size:.9rem;letter-spacing:.08em}h1{font-size:clamp(1.8rem,6vw,2.5rem);line-height:1.3;margin:12px 0}h2{font-size:1.2rem;margin-top:28px}a{color:#164f99;text-underline-offset:4px}a:focus-visible{outline:3px solid #164f99;outline-offset:4px}footer{margin-top:40px;padding-top:20px;border-top:1px solid #cdd7e4;font-size:.9rem}code{overflow-wrap:anywhere}li{margin-bottom:8px}
+  </style>
+</head>
+<body>
+  <main>
+    <header><p class="label">rclone-backup</p><h1>プライバシーポリシー</h1><p>更新日：2026年10月14日</p></header>
+    <h2>対象と目的</h2>
+    <p>rclone-backup は、本人が管理する端末から本人の Google Drive へ、restic と rclone を使ってバックアップを保存・復元する個人用アプリです。第三者の利用者を募集するサービスではありません。</p>
+    <h2>アクセスするデータと利用</h2>
+    <p>本人が選択したローカルデータを restic で暗号化し、rclone を通じて Google Drive に保存します。Google Drive API の <code>drive.file</code> 権限により、このアプリが作成したファイル、または本人がこのアプリに利用を許可したファイルの内容とメタデータを、バックアップの保存・確認・復元・管理のために読み書きします。</p>
+    <p>Google の認可情報は端末側で rclone が接続のために使用します。認可情報やバックアップの内容を、この説明サイトへ送信する機能はありません。</p>
+    <h2>保管と共有</h2>
+    <p>暗号化バックアップは本人の Google Drive に保管します。復元に必要な暗号化パスワードは本人が管理します。端末側では処理に必要なキャッシュや実行ログが保存される場合があります。本アプリの目的として、Google API から取得したデータを販売したり、広告・AIモデルの学習に利用したり、第三者向けに公開・配布したりしません。</p>
+    <h2>保持と削除</h2>
+    <p>バックアップは、本人が削除または保持設定に基づく整理を行うまで保管します。不要なスナップショットや保存データは、本人が restic の保持・削除機能や Google Drive の管理機能で削除できます。Google Drive のゴミ箱に移したデータの完全削除は、同サービスの仕組みに従います。端末側の認可情報・キャッシュ・ログは、必要に応じて本人が別途削除します。</p>
+    <h2>Google アカウントへのアクセス取消</h2>
+    <p>本人は <a href="https://myaccount.google.com/connections">Google アカウントの接続管理</a>から、本アプリへのアクセスを取り消せます。取消後は再度許可するまで接続できません。アクセスの取消だけでは、すでに保存したバックアップは削除されません。</p>
+    <h2>このウェブサイトについて</h2>
+    <p>このサイトは GitHub Pages 上の静的な説明ページです。独自のアクセス解析、広告、入力フォーム、Cookie を使用するコードは設置していません。ホスティング事業者の GitHub は、サイト配信やセキュリティ等のために IP アドレスなどのアクセス情報を扱うことがあります。これはバックアップアプリによる Google Drive データの取扱いとは別です。詳細は <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub のプライバシー声明</a>をご覧ください。</p>
+    <footer><a href="index.html">rclone-backup の説明へ戻る</a></footer>
+  </main>
+</body>
+</html>
